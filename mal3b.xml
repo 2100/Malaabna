@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mal3b>
+  <mal3ab>
+    <id>01</id>
+    <name>markaz shabab sheraton</name>
+    <location>sheraton</location>
+    <description>mal3ab helw gedan, mawgod f sherato</description>
+    <price>30 for 1 hour</price>
+  </mal3ab>
+
+  <mal3ab>
+    <id>02</id>
+    <name>sa7a el riyadiya in ismailia</name>
+    <location>ismailia</location>
+    <description>2 start</description>
+    <price>100 for 1 hour</price>
+  </mal3ab>
+
+  <mal3ab>
+    <id>03</id>
+    <name>el wafa2 wl amal</name>
+    <location>madinet nasr</location>
+    <description>4 star</description>
+    <price>60 for 1 hour</price>
+  </mal3ab>
+
+  <mal3ab>
+    <id>04</id>
+    <name>5omasy nady el shams</name>
+    <location>masr el gedida</location>
+    <description>af5am haga 3ndena</description>
+    <price>120 for 1 hour</price>
+  </mal3ab>
+</mal3b>

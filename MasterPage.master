@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+  
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 80px;
+        }
+
+        .auto-style2 {
+            width: 60px;
+        }
+
+        .auto-style4 {
+            height: 40px;
+        }
+
+        .auto-style5 {
+            width: 1091px;
+            height: 294px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table style="width:1100px; margin:0 auto">
+            <tr style="width:1100px; height:50px">
+                <td class="auto-style2">
+                    <img src="imagesss/logo1.png"
+                </td class="auto-style4">
+                <td class="auto-style1">Mal3abna</td>
+            </tr>
+            <tr style="width:1100px;height:40px;background-color:#5f98f3">
+                <td colspan="3">
+                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" OnMenuItemClick="Menu1_MenuItemClick">
+                        <Items>
+                            <asp:MenuItem Text="Home" Value="Home"></asp:MenuItem>
+                            <asp:MenuItem Text="e7gez mal3ab" Value="e7gez mal3ab" NavigateUrl="~/Default.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="ehna meen" Value="ehna meen"></asp:MenuItem>
+                            <asp:MenuItem Text="call us" Value="call us"></asp:MenuItem>
+                            <asp:MenuItem Text="Login" Value="Login" NavigateUrl="~/Registration.aspx"></asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="#FF6666" ForeColor="White" />
+                        <StaticMenuItemStyle Font-Size="Large" ForeColor="Black" HorizontalPadding="50px" />
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr style="width:1100px;height:300px">
+                <td colspan="3">
+                    <img src="imagesss/mala3ebna.png"
+                </td class="auto-style5">
+            </tr>
+            <tr style="width:1100px">
+                <td colspan="3">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr style="width:1100px;height:20px;background-color:black;text-align:center;color:#fff">
+                <td colspan="3">
+                    e7gez mal3abak yalla mestanii eh !!!
+                </td>
+            </tr>
+        </table>
+        <div>
+            <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None">  
+            <AlternatingRowStyle BackColor="White" />  
+            <Columns>  
+                <asp:TemplateField HeaderText="id">  
+                    <EditItemTemplate>  
+                        <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("id") %>'></asp:TextBox>  
+                    </EditItemTemplate>  
+                    <ItemTemplate>  
+                        <asp:Label ID="Label1" runat="server" Text='<%# Bind("id") %>'></asp:Label>  
+                    </ItemTemplate>  
+                </asp:TemplateField>  
+                <asp:TemplateField HeaderText="name">  
+                    <EditItemTemplate>  
+                        <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("name") %>'></asp:TextBox>  
+                    </EditItemTemplate>  
+                    <ItemTemplate>  
+                        <asp:Label ID="Label2" runat="server" Text='<%# Bind("name") %>'></asp:Label>  
+                    </ItemTemplate>  
+                </asp:TemplateField>  
+                <asp:TemplateField HeaderText="location">  
+                    <EditItemTemplate>  
+                        <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("location") %>'></asp:TextBox>  
+                    </EditItemTemplate>  
+                    <ItemTemplate>  
+                        <asp:Label ID="Label3" runat="server" Text='<%# Bind("location") %>'></asp:Label>  
+                    </ItemTemplate>  
+                </asp:TemplateField>  
+                <asp:TemplateField HeaderText="description">  
+                    <EditItemTemplate>  
+                        <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("description") %>'></asp:TextBox>  
+                    </EditItemTemplate>  
+                    <ItemTemplate>  
+                        <asp:Label ID="Label3" runat="server" Text='<%# Bind("description") %>'></asp:Label>  
+                    </ItemTemplate>  
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="price">  
+                    <EditItemTemplate>  
+                        <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("price") %>'></asp:TextBox>  
+                    </EditItemTemplate>  
+                    <ItemTemplate>  
+                        <asp:Label ID="Label3" runat="server" Text='<%# Bind("price") %>'></asp:Label>  
+                    </ItemTemplate>  
+                </asp:TemplateField>
+            </Columns>
+            </asp:GridView>
+        </div>
+    </form>
+</body>
+</html>
